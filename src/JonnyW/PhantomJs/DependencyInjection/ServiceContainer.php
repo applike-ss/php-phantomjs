@@ -38,7 +38,7 @@ class ServiceContainer extends ContainerBuilder
         if (!self::$instance instanceof ServiceContainer) {
 
             self::$instance = new ServiceContainer();
-            self::$instance->load();
+            self::$instance->load('');
         }
 
         return self::$instance;
